@@ -1,0 +1,35 @@
+{
+  "name": "research-styling-technologies-2024",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --open",
+    "build": "vite build",
+    "preview": "vite build && vite preview"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.0",
+    "@mui/material": "^7.0.2",
+    "@pigment-css/react": "^0.0.30",
+    "@stylexjs/stylex": "^0.5.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "styled-components": "^6.1.17"
+  },
+  "devDependencies": {
+    "@babel/preset-typescript": "^7.24.1",
+    "@pigment-css/vite-plugin": "^0.0.3",
+    "@stylexjs/babel-plugin": "^0.5.1",
+    "@types/react": "^18.2.75",
+    "@types/react-dom": "^18.2.24",
+    "@vitejs/plugin-react": "^4.2.1",
+    "prettier": "^3.5.3",
+    "tailwindcss": "^4.1.4",
+    "typescript": "^5.8.3",
+    "vite": "^5.2.0",
+    "vite-plugin-stylex": "^0.8.2",
+    "vite-plugin-checker": "^0.9.1"
+  }
+}

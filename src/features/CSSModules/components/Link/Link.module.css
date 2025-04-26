@@ -1,0 +1,10 @@
+.anchor {
+  display: inline-block;
+  color: #04c8b4;
+  border-bottom: 1px dashed currentColor;
+  transition: color 220ms;
+}
+
+.anchor:hover {
+  color: #025048;
+}

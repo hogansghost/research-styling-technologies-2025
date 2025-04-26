@@ -1,0 +1,32 @@
+.button {
+  display: block;
+  border: 0;
+  color: var(--style-research-cssm-button-primary-color-default);
+  border-radius: 8px;
+  transition: background-color 220ms;
+  background-color: var(--style-research-cssm-button-primary-background-default);
+}
+
+.button:not([disabled]) {
+  cursor: pointer;
+}
+
+.button:not([disabled]):hover {
+  background-color: var(--style-research-cssm-button-primary-background-hover);
+}
+
+.button[disabled] {
+  background-color: var(--style-research-cssm-button-primary-background-disabled);
+}
+
+.small {
+  padding: 8px 4px;
+}
+
+.medium {
+  padding: 8px 16px;
+}
+
+.large {
+  padding: 8px 32px;
+}

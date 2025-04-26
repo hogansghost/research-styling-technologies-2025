@@ -1,0 +1,21 @@
+.placeholder {
+  padding: var(--spacing-medium);
+  border-radius: 16px;
+  border: 2px dashed rgba(0, 0, 0, 0.1);
+  min-height: 120px;
+  text-align: center;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  grid-auto-rows: min-content;
+  align-content: center;
+}
+
+.placeholderPrimary {
+  background-color: var(--style-research-cssm-content-background-secondary);
+}
+
+.placeholderSecondary {
+  color: var(--style-research-cssm-content-color-branding-secondary);
+  background-color: var(--style-research-cssm-content-background-branding-secondary);
+  border-color: rgba(255, 255, 255, 0.4);
+}

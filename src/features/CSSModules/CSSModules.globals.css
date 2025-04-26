@@ -1,0 +1,15 @@
+:root {
+  --spacing-small: 8px;
+  --spacing-medium: 16px;
+  --spacing-large: 32px;
+
+  --style-research-cssm-button-primary-color-default: #ffffff;
+  --style-research-cssm-button-primary-background-default: #645ad2;
+  --style-research-cssm-button-primary-background-hover: #5249b0;
+  --style-research-cssm-button-primary-background-disabled: rgb(156 163 175 / 0.9);
+
+  --style-research-cssm-content-background-primary: #ffffff;
+  --style-research-cssm-content-background-secondary: #f6f6f6;
+  --style-research-cssm-content-background-branding-secondary: #222141;
+  --style-research-cssm-content-color-branding-secondary: #ffffff;
+}

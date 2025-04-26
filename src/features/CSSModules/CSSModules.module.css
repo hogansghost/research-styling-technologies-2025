@@ -1,0 +1,30 @@
+.cardContent {
+  display: grid;
+  grid-auto-rows: min-content;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 32px;
+}
+
+.section {
+  padding: var(--spacing-medium);
+  border-radius: 16px;
+  background-color: var(--style-research-cssm-content-background-secondary);
+}
+
+.placeholderWrappingGrid {
+  display: grid;
+  gap: 32px;
+  grid-auto-rows: min-content;
+  grid-template-columns: minmax(0, 1fr);
+
+  @media screen and (min-width: 1024px) {
+    grid-template-columns: repeat(2, minmax(150px, 1fr));
+  }
+}
+
+.placeholderCardGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-auto-rows: min-content;
+  gap: 16px;
+}
