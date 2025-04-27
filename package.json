@@ -19,12 +19,12 @@
     "styled-components": "^6.1.17"
   },
   "devDependencies": {
-    "@babel/preset-typescript": "^7.24.1",
-    "@pigment-css/vite-plugin": "^0.0.3",
-    "@stylexjs/babel-plugin": "^0.5.1",
+    "@babel/preset-typescript": "^7.27.0",
+    "@pigment-css/vite-plugin": "^0.0.30",
+    "@stylexjs/babel-plugin": "^0.12.0",
     "@types/react": "^18.2.75",
     "@types/react-dom": "^18.2.24",
-    "@vitejs/plugin-react": "^4.2.1",
+    "@vitejs/plugin-react": "^4.4.1",
     "prettier": "^3.5.3",
     "tailwindcss": "^4.1.4",
     "typescript": "^5.8.3",

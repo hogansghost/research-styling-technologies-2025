@@ -10,7 +10,6 @@ export default defineConfig({
     styleX(),
     pigment({
       theme: extendTheme({
-        // @ts-expect-error types?
         spacing: {
           unit: 8,
         },
@@ -20,4 +19,8 @@ export default defineConfig({
       typescript: true,
     }),
   ],
+  optimizeDeps: {
+    // Pigment issue with vite https://github.com/mui/pigment-css/issues/344#issuecomment-2523024300
+    include: ['prop-types', 'react-is', 'hoist-non-react-statics', 'html-react-parser'],
+  },
 });

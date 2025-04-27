@@ -9,9 +9,9 @@ export const card = css({
 });
 
 export const cardHeader = css(({ theme }) => ({
-  padding: theme.spacing.unit * 3,
+  padding: theme.spacing.unit * 2,
 }));
 
 export const cardBody = css(({ theme }) => ({
-  padding: theme.spacing.unit * 3,
+  padding: theme.spacing.unit * 2,
 }));
