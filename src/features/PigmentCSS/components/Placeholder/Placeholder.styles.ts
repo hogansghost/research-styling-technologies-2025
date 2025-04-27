@@ -1,7 +1,7 @@
 import { styled } from '@pigment-css/react';
+import { PlaceholderProps } from './Placeholder.model';
 
-export const StyledPlaceholder = styled('div')({
-  // @ts-expect-error pigmentCSS types
+export const StyledPlaceholder = styled('div')<PlaceholderProps>({
   padding: '16px',
   borderRadius: '16px',
   border: '2px dashed rgba(0, 0, 0, 0.1)',

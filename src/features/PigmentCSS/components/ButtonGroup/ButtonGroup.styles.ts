@@ -1,7 +1,7 @@
-import { css } from '@pigment-css/react';
+import { styled } from '@pigment-css/react';
+import { ButtonGroupProps } from './ButtonGroup.model';
 
-export const buttonGroup = css({
-  // @ts-expect-error pigmentCSS types
+export const StyledButtonGroup = styled('div')<ButtonGroupProps>({
   display: 'flex',
   alignItems: 'stretch',
   // Currently creating variables is missing documentation for non NextJS projects, so we will reuse other existing variables.

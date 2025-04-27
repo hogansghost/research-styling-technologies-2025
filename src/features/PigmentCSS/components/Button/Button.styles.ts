@@ -1,26 +1,26 @@
 import { styled } from '@pigment-css/react';
+import { ButtonProps } from './Button.model';
 
-export const StyledButton = styled('button')({
-  // @ts-expect-error pigmentCSS types
+export const StyledButton = styled('button')<ButtonProps>({
   display: 'block',
   border: 0,
   // Currently creating variables is missing documentation for non NextJS projects, so we will reuse other existing variables.
-  color: 'var(--style-research-cssm-button-primary-color-default)',
-  backgroundColor: 'var(--style-research-cssm-button-primary-background-default)',
+  color: 'var(--style-research-cssm-button-primary-color-default, white)',
+  backgroundColor: 'var(--style-research-cssm-button-primary-background-default, red)',
   borderRadius: '8px',
   transition: 'background-color 220ms',
+  padding: '8px',
 
-  ':[disabled]': {
+  '&:[disabled]': {
     backgroundColor: 'rgb(156 163 175 / 0.9)',
   },
 
-  ':not([disabled])': {
+  '&:not([disabled])': {
     cursor: 'pointer',
   },
 
-  // This doesn't work lol
-  ':not([disabled]):hover': {
-    backgroundColor: 'var(--style-research-cssm-button-primary-background-hover)',
+  '&:not([disabled]):hover': {
+    backgroundColor: 'var(--style-research-cssm-button-primary-background-hover, crimson)',
   },
 
   variants: [

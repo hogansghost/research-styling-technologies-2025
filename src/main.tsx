@@ -8,7 +8,6 @@ import { GlobalStyles } from './features/StyledComponents/global/styles';
 import { StyledComponents } from './features/StyledComponents/StyledComponents';
 import { StyleX } from './features/StyleX/StyleX';
 import { Tailwind } from './features/Tailwind/Tailwind';
-import { ExampleSection } from './layout/ExampleSection/ExampleSection';
 import { ExampleWrapper } from './layout/ExampleWrapper/ExampleWrapper';
 import { muiTheme } from './themes/mui.theme';
 import { scTheme } from './themes/sc.theme';
@@ -20,29 +19,29 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
     <MuiThemeProvider theme={muiTheme}>
       <ExampleWrapper>
-        <ExampleSection title="StyleX">
+        <ExampleWrapper.Section title="StyleX">
           <StyleX />
-        </ExampleSection>
+        </ExampleWrapper.Section>
 
-        <ExampleSection title="Styled Components">
+        <ExampleWrapper.Section title="Styled Components">
           <SCThemeProvider theme={scTheme}>
             <GlobalStyles />
 
             <StyledComponents />
           </SCThemeProvider>
-        </ExampleSection>
+        </ExampleWrapper.Section>
 
-        <ExampleSection title="Pigment CSS">
+        <ExampleWrapper.Section title="Pigment CSS">
           <PigmentCSS />
-        </ExampleSection>
+        </ExampleWrapper.Section>
 
-        <ExampleSection title="CSS Modules">
+        <ExampleWrapper.Section title="CSS Modules">
           <CSSModules />
-        </ExampleSection>
+        </ExampleWrapper.Section>
 
-        <ExampleSection title="Tailwind">
+        <ExampleWrapper.Section title="Tailwind">
           <Tailwind />
-        </ExampleSection>
+        </ExampleWrapper.Section>
       </ExampleWrapper>
     </MuiThemeProvider>
   </React.StrictMode>,

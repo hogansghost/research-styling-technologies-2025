@@ -1,5 +1,5 @@
 import { CardProps } from './Card.model';
-import { card, cardHeader, cardBody } from './Card.styles';
+import { card, cardBody, cardHeader } from './Card.styles';
 
 const CardBase = ({ children, ...props }: CardProps) => (
   <article className={card} {...props}>

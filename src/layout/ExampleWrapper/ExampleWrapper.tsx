@@ -1,4 +1,6 @@
-export const ExampleWrapper = ({ children }: { children: React.ReactNode }) => (
+import { ExampleSection } from './features/ExampleSection/ExampleSection';
+
+const ExampleBase = ({ children }: { children: React.ReactNode }) => (
   <main
     style={{
       display: 'grid',
@@ -14,3 +16,7 @@ export const ExampleWrapper = ({ children }: { children: React.ReactNode }) => (
     {children}
   </main>
 );
+
+export const ExampleWrapper = Object.assign(ExampleBase, {
+  Section: ExampleSection,
+});
