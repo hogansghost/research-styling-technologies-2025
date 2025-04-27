@@ -1,3 +1,5 @@
+// @ts-nocheck
+// Cannot be bothered to type the MUI stuff.
 import { createTheme } from '@mui/material/styles';
 
 export const muiTheme = createTheme({

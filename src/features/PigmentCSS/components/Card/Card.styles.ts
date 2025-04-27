@@ -8,12 +8,10 @@ export const card = css({
   boxShadow: '0 3px 8px -2px rgba(0, 0, 0, 0.12), 0 6px 14px -4px rgba(0, 0, 0, 0.1)',
 });
 
-export const cardHeader = css({
-  // Currently creating variables is missing documentation for non NextJS projects, so we will reuse other existing variables.
-  padding: 'var(--spacing-medium)',
-});
+export const cardHeader = css(({ theme }) => ({
+  padding: theme.spacing.unit * 3,
+}));
 
-export const cardBody = css({
-  // Currently creating variables is missing documentation for non NextJS projects, so we will reuse other existing variables.
-  padding: 'var(--spacing-medium)',
-});
+export const cardBody = css(({ theme }) => ({
+  padding: theme.spacing.unit * 3,
+}));

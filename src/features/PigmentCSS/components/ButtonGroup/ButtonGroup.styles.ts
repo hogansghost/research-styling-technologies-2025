@@ -1,11 +1,10 @@
 import { styled } from '@pigment-css/react';
 import { ButtonGroupProps } from './ButtonGroup.model';
 
-export const StyledButtonGroup = styled('div')<ButtonGroupProps>({
+export const StyledButtonGroup = styled('div')<ButtonGroupProps>(({ theme }) => ({
   display: 'flex',
   alignItems: 'stretch',
-  // Currently creating variables is missing documentation for non NextJS projects, so we will reuse other existing variables.
-  gap: 'var(--spacing-medium)',
+  gap: theme.spacing.unit * 1,
 
   variants: [
     {
@@ -27,4 +26,4 @@ export const StyledButtonGroup = styled('div')<ButtonGroupProps>({
       },
     },
   ],
-});
+}));
